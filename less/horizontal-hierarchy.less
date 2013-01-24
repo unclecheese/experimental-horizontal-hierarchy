@@ -45,7 +45,17 @@
 		.opacity(90);
 	}
 }
-
+.cms-menu-list.child.ui-sortable{
+	a{
+		#gradient > .vertical(#BFCAD2, #B0BEC7);
+		border-bottom: 1px solid #9AB1C4;
+		
+		&:hover{
+			#gradient > .vertical(darken(#BFCAD2,5), darken(#B0BEC7,5));			
+		}
+	}
+	
+}
 .hh-node{
 	padding: 0px;
 	
@@ -60,7 +70,6 @@
 	a{
 		padding: 0px !important;
 		line-height: 20px;
-
 	}
 	.hh-add-content{
 		color: #fff;
@@ -96,7 +105,6 @@
 
 div.hh-menu-buttons {
 	background-color: #646E74;
-	background-image: linear-gradient(#646E74, #4B5459);
 	background-size: 100% auto;
 	border-bottom: 1px solid #748D9D;
 	border-top: 1px solid #C2CDD4;
