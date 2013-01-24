@@ -1,0 +1,3 @@
+CMSPagesController:
+  allowed_actions:
+    - sidebarchildren

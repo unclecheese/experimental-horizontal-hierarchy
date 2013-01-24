@@ -1,0 +1,4 @@
+.cms .horizontal-hierarchy ul.cms-menu-list {position:absolute;top:30px;left:0;bottom:0;right:0;width:100%;}
+.cms .horizontal-hierarchy ul.cms-menu-list li {position:relative;}
+.hh-child-items {position:absolute;right:10px;opacity:0.5;top:50%;margin-top:-8px;height:32px;}
+.hh-node .handle {cursor: move;float:left;}
