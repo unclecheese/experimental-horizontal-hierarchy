@@ -22,9 +22,9 @@
 		
 	<div class="cms-panel-content center horizontal-hierarchy">	
 		<div class="hh-menu-buttons">
-				<a class="horizontal-hierarchy-home" href="javascript:void(0);"><img src="horizontal_hierarchy/images/home.png" /></a>
+				<a class="horizontal-hierarchy-home" href="javascript:void(0);"><img src="horizontal-hierarchy/images/home.png" /></a>
 				<a class="cms-panel-link panel-title" href="javascript:void(0);">$SiteConfig.Title</a>
-				<a class="horizontal-hierarchy-back" href="javascript:void(0);"><img src="horizontal_hierarchy/images/left.png" height="12"/> Back</a> 
+				<a class="horizontal-hierarchy-back" href="javascript:void(0);"></a> 
 				
 		</div>
 		<ul class="cms-menu-list top current">
@@ -34,7 +34,7 @@
 					<span class="icon icon-16 icon-{$Code.LowerCase}">&nbsp;</span>
 					<span class="text">$Title</span>
 					<% if HasChildItems %>
-					<span class="hh-child-items"><img src="horizontal_hierarchy/images/right.png" /></span>
+					<span class="hh-child-items"><i class="right"></i></span>
 					<% end_if %>
 				</a>
 			
