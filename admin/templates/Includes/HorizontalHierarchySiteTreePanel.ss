@@ -2,13 +2,13 @@
 		<% loop Items %>
 			<li id="node-$Node.ID" class="hh-node">
 				<a data-children-url="$ChildrenLink" <% if HasChild %>class="has-child"<% end_if %> data-edit-url="$EditLink">
-					<span class="handle"><img src="horizontal_hierarchy/images/handle.png" /></span>					
+					<span class="handle"></span>					
 					<span class="text">$Title</span>					
 					<% if HasChild %>
-					<span class="hh-child-items"><img src="horizontal_hierarchy/images/right.png" /></span>
+					<span class="hh-child-items"><i class="right"></i></span>
 					<% end_if %>
 				</a>
 			</li>
 		<% end_loop %>
-			<li><a href="$AddLink" class="cms-panel-link"><img src="horizontal_hierarchy/images/add.png" /> Add content here</a></li>
+			<li class="hh-node"><a href="$AddLink" class="cms-panel-link hh-add-content"> <i class="add"></i>Add content here</a></li>
 		</ul>
