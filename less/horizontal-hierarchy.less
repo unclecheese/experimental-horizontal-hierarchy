@@ -1,0 +1,137 @@
+@import "mixins.less";
+
+.cms{
+	.horizontal-hierarchy {
+		ul.cms-menu-list {
+			position:absolute;
+			top:30px;
+			left:0;
+			bottom:0;
+			right:0;
+			width:100%;
+			
+			li {
+				position:relative;
+			}
+		}
+		
+	}
+}
+
+
+.hh-child-items {
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top: -8px;
+	height:16px;
+	width: 16px;
+	.opacity(60);
+	.img-circle();
+	.transition(all .3s ease-out);
+
+	i{
+		background: url('../images/right.png') no-repeat center;
+		display: block;
+		width: 	16px;
+		height: 16px;
+		position: relative;
+		z-index: 4;
+	}
+
+	&:hover{
+		.box-shadow(inset 0 0 3px #000);
+		background-color: rgba(30,30,30,.4);
+		.opacity(90);
+	}
+}
+
+.hh-node{
+	padding: 0px;
+	
+	.handle {
+		cursor: move;
+		display: block;
+		width: 20px;
+		height: 20px;
+		float:left;
+		background: url('../images/handle.png') no-repeat 0 2px;
+	}
+	a{
+		padding: 0px !important;
+		line-height: 20px;
+
+	}
+	.hh-add-content{
+		color: #fff;
+		text-shadow: 1px 1px 0 #333;
+		
+		i{
+			.transition(all .3s ease-out);
+
+			.opacity(60);
+			.img-circle();
+			margin: 4px 0 0 3px;
+			
+			display: block;
+			float: left;
+			width:  16px;
+			height: 16px;
+			margin-right: 5px;
+			.box-shadow(inset 0 0 3px #000);
+			background: #999 url('../images/add.png') no-repeat center;
+
+		}
+		
+		&:hover{
+			i{
+				background: #555 url('../images/add.png') no-repeat center;				
+			}
+			
+			color: #fff;
+		}
+	}
+}
+
+
+div.hh-menu-buttons {
+	background-color: #646E74;
+	background-image: linear-gradient(#646E74, #4B5459);
+	background-size: 100% auto;
+	border-bottom: 1px solid #748D9D;
+	border-top: 1px solid #C2CDD4;
+	color: #1F1F1F;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 28px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 1px 1px 0 #BFCAD2;
+	white-space: nowrap;
+	height: 28px;
+	
+	a{
+		color: #fff;
+		text-shadow:1px 1px 0 #1D1F20;
+		
+		&.horizontal-hierarchy-home{
+			float: left;
+			margin-left: 10px;
+		}
+		&.horizontal-hierarchy-back {
+			float: right;
+			display: block;
+			width: 10px;
+			height: 20px;
+			background: url('../images/left.png') no-repeat 0 8px;
+			padding-left: 12px;
+		}
+		&.cms-panel-link.panel-title {
+			float: left;
+			margin-left: 10px;
+		}
+	}
+}
+
+
+
